@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{background-image: url(weather.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size:contain;
+        font-size: medium;
+    }
+
+    *{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+.body
+{
+    background-image: url('./weather.jpg');
+}
+.container
+{
+    width:600px;
+    margin: 100px auto;
+    padding:40px;
+}
+.inputs
+{
+    padding:2rem 0 2rem 0;
+    text-align:center;
+    background: rgb(224,190,190);
+    height: 150px;
+}
+.inputs input[type="text"]
+{
+    height:4rem;
+    width:20rem;
+    background:blue;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    border:none;
+    background-color: transparent;
+    border:2px solid #473939;
+    border-radius:3px;
+    margin-right:4px ;
+
+}
+#add
+{
+ height:3rem;
+ width:6rem;
+ background:#270aca;
+ font-weight:bold;
+ color:white;
+ font-size: 1rem;
+ margin-top: 20px;
+ border: none;
+ border-radius: 4px;
+}
+.display
+{
+    text-align: center;
+    width:520px;
+    color:green;
+}
+.wrapper{
+    margin:0 9rem;
+    background-color:rgb(172,189,221);
+    height: 45vh;
+    margin:50px auto;
+    border-radius: 2px;
+
+}
+.wrapper h2{
+    padding:5px 0;
+    text-align: center;
+    background:#0548b5;
+    color:white;
+}
+.wrapper p{
+    margin:20px 50px;
+    margin-right:20px;
+    text-align:left;
+    color:rgb(38, 121, 216);
+    font-size:23px;
+
+}
+.wrapper h2 span{
+    font-size:26px;
+    color:aqua;
+}
+.wrapper p span{
+    color:purple;
+    font-size:25px;
+}
+
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+     <link rel="stylesheet" href="index.css"> 
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <section class="inputs">
+                <input type="text" placeholder="Enter your city name:"  id="cityinput">
+                <input type="button" value="submit" id="add">
+                
+            </section>
+
+            <section class="display">
+                <div class="wrapper">
+                    <h2 id="cityoutput"></h2>
+                    <p id="description"></p>
+                    <p id="temp"></p>
+                    <p id="wind"></p>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
